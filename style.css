@@ -6,7 +6,9 @@
     border: none;
     outline: none;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {

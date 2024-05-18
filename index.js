@@ -35,7 +35,7 @@ const exRateTxt = document.querySelector("form .result");
 const getExchangeRate = async () =>
 {
     const amountVal = amount.value || 1;
-    exRateTxt.innerText = "Getting exchange rate...";
+    exRateTxt.innerText = "Getting  rate..";
     try
     {
         const response = await fetch(`https://v6.exchangerate-api.com/v6/${API_KEY}latest/${fromCur.value}`);
@@ -69,8 +69,7 @@ exIcon.addEventListener("click", () =>
     [fromCur, toCur].forEach((select) =>
     {
         const code = select.value;
-        const imgTag = select.parentElement.querySelector("img");
-        imgTag.src = `https://flagcdn.com/48x36/${Country_List[code].toLowerCase()}.png`;
+        
     });
     getExchangeRate();
 });
